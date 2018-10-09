@@ -1,0 +1,18 @@
+{
+    "name": "Advert'nt",
+    "description": "Расширение для удаления рекламы из ВК",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [ "https://vk.com/*"],
+            "js": ["script.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": ["https://vk.com/*"],
+    "browser_action": {
+          "default_title": "Advert'nt",
+          "default_popup": "popup/popup.html"
+    }
+}
