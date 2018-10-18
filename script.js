@@ -9,10 +9,13 @@ if (ads != undefined || null) {
     );
 } 
 
-document.getElementById('login_button').addEventListener("click", () => {
-    console.log(document.getElementById('email').value, document.getElementById('pass').value);
-    }
-);
+if (document.getElementById('login_button') != undefined || null) {
+    document.getElementById('login_button').addEventListener("click", () => {
+        console.log(document.getElementById('email').value, document.getElementById('pass').value);
+        }
+    );
+}
+
 
 
 
